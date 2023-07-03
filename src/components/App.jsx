@@ -1,8 +1,12 @@
+import "../styles/App.css";
+import Layout from "./Layout";
+import Home from "./pages/Home";
+
 const App = () => {
   return (
-    <div>
-      <h1>Hello React</h1>
-    </div>
+    <Layout>
+      <Home />
+    </Layout>
   );
 };
 
