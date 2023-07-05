@@ -1,4 +1,4 @@
-import classes from "../styles/TextInput.module.css";
+import classes from "../../../styles/signup/TextInput.module.css";
 
 export default function TextInput({ icon, ...rest }) {
   return (

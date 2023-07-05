@@ -1,5 +1,5 @@
 import Nav from "./navbar/Nav";
-import classes from "../styles/Layout.module.css";
+import classes from "../styles/signup/Layout.module.css";
 
 export default function Layout({ children }) {
   return (

@@ -1,5 +1,5 @@
-import classes from "../styles/Illustration.module.css";
-import signupImage from "../assets/images/signup.svg";
+import classes from "../../../styles/signup/Illustration.module.css";
+import signupImage from "../../../assets/images/signup.svg";
 
 export default function Illustration() {
   return (

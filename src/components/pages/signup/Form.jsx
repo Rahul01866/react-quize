@@ -1,4 +1,4 @@
-import classes from "../styles/Form.module.css";
+import classes from "../../../styles/signup/Form.module.css";
 
 export default function Form({ children, className, ...rest }) {
   return (
