@@ -23,7 +23,7 @@ export default function useVideoList(page) {
         videosRef,
         orderByKey(),
         startAt("" + page),
-        limitToFirst(3)
+        limitToFirst(6)
       );
       try {
         setError(false);
@@ -43,7 +43,6 @@ export default function useVideoList(page) {
         setError(true);
       }
     }
-
     fetchVideos();
   }, [page]);
 

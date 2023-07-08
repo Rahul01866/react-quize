@@ -35,12 +35,16 @@ export default function Videos() {
       {videos.length > 0 ? (
         <InfiniteScroll
           dataLength={videos.length}
+          loader="Loading..."
           hasMore={hasMore}
-          next={() => setPage(page + 3)}
+          next={() => setPage(page + 6)}
         >
           {videos.map((video, index) =>
             video.noq > 0 ? (
-              <Link key={`${video.youtubeID}-${index}`} to="/quiz">
+              <Link
+                key={`${video.youtubeID}-${index}`}
+                to={`/quiz/${video.youtubeID}`}
+              >
                 <Video
                   title={video.title}
                   id={video.youtubeID}
@@ -48,8 +52,12 @@ export default function Videos() {
                 />
               </Link>
             ) : (
-              // eslint-disable-next-line react/jsx-key
-              <Video title={video.title} id={video.youtubeID} noq={video.noq} />
+              <Video
+                key={video.youtubeID}
+                title={video.title}
+                id={video.youtubeID}
+                noq={video.noq}
+              />
             )
           )}
         </InfiniteScroll>
